@@ -21,11 +21,19 @@ This project implements a **Machine Learning regression model** to predict housi
 2. **Feature Engineering:** Created new features such as `house_age` to capture time-based trends.
 3. **Model Selection:** Implemented a **Random Forest** algorithm, which outperformed standard linear models by capturing non-linear relationships.
 4. **Validation:** Used an 80/20 train-test split and standard scaling for robust performance.
-
 ## 📈 Visualizing the Results
-*(Tip: You can insert your images here after pushing them to GitHub)*
-- **Actual vs Predicted Prices:** Showcases the strong correlation between model estimates and real market values.
-- **Feature Importance:** Highlights the top 10 factors driving house prices.
+
+### Actual vs Predicted Prices
+The following plot demonstrates the strong correlation between our model estimates and the real market values, confirming the R² score of 0.85.
+![Actual vs Predicted](./output_charts/actual_vs_predicted.png)
+
+### Feature Importance
+This chart highlights the top factors driving house prices. Living space (sqft_living) and the overall grade of the house are the most influential variables.
+![Feature Importance](./output_charts/feature_importance.png)
+
+### Correlation Heatmap
+A look at how different variables relate to each other and to the final price.
+![Correlation Heatmap](./output_charts/correlation_heatmap.png)
 
 ---
 *Developed as a Machine Learning portfolio project.*
