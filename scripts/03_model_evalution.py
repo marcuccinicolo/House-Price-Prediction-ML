@@ -30,7 +30,7 @@ plt.tight_layout()
 plt.savefig("actual_vs_predicted.png")
 plt.show()
 
-# 5. FEATURE IMPORTANCE: Quali variabili contano di più?
+# 5. FEATURE IMPORTANCE
 importances = model.feature_importances_
 feature_names = X.columns
 feature_importance_df = pd.DataFrame({'Feature': feature_names, 'Importance': importances}).sort_values(by='Importance', ascending=False)
